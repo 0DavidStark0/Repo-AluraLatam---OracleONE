@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(170deg,white,black);
+}
+.encabezado{
+  background-color: #888888;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu ul{
+  display: flex;
+  gap: 25px;
+}
+li{
+  list-style: none;
+}
+.menu li a{
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+.menu li a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+/* ----------------------------Main-------------------------------- */
+.servicios{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+.servicios li{
+  text-align: center;
+  border: black 2px solid;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px 10px;
+  margin: 0 1.5%;
+}
+.servicios li:hover{
+  border-color: #c78c19;
+}
+.servicios li:hover h2{
+  font-size: 33px;
+}
+.servicios li:active{
+  border-color: #088c19;
+}
+.servicios h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+.p-des{
+  font-size: 15px;
+}
+.p-prec{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ----------------------------Footer-------------------------------- */
+footer{
+  text-align: center;
+  background-image:url(../images/imagenes/bg.jpg);
+  color: white;
+  padding: 40px 0;
+}
+.copyright{
+  font-size: 12px;
+}
+
+@media screen and (max-width:480px) {
+  .encabezado{
+    justify-content: unset;
+    flex-wrap: wrap;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+  .menu{
+    width: 60%;
+    margin: auto auto 30px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .menu ul{
+    display: unset;
+    margin: 0 auto;
+  }
+}
